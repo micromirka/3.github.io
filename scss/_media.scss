@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+
+    .header {
+
+        .header__container {
+
+            .header__head {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .org {
+
+        .org__container {
+
+            .org__grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    }
+
+    .cost {
+        
+        .cost__container {
+
+            .cost__grid {
+                width: auto;
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}

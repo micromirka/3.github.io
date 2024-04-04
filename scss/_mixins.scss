@@ -1,0 +1,9 @@
+@mixin container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+@mixin button {
+    padding: 25px 30px;
+    border-radius: 50px;
+}

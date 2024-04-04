@@ -1,0 +1,73 @@
+.header {
+    background-color: $mainPurple;
+    background-image: url('../images/Иллюстрация.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    padding-bottom: 200px;
+
+    .header__container {
+        @include container();
+
+        .header__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            nav {
+                width: 40%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .header__head-clock {
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+
+                a {
+                    color: $darkPurple;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .header__body {
+            text-align: center;
+
+            h1, h2, h4 {
+                margin-bottom: 30px;
+            }
+            
+            form {
+
+                input, button {
+                    @include button;
+                    border: none;
+                    margin-right: 20px;
+                    outline: none;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    background-color: #FFE149;
+                    color: $gray;
+                }
+
+                input {
+                    color: $darkPurple;
+                }
+            }
+        }
+    }
+}

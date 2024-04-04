@@ -1,0 +1,55 @@
+.cost {
+    background-color: $mainPurple;
+    color: $white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('../images/ИллюстрацияTable.png'), url('../images/Group\ 83.png'), url('../images/Group\ 82.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, auto, auto;
+    background-position: bottom, center left, center right;
+
+    .cost__container {
+        @include container;
+        text-align: center;
+        
+
+        h2, h3 {
+            margin-bottom: 40px;
+        }
+
+        .cost__grid {
+            width: 50%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            font-family: 'Golos Text', sans-serif;
+
+            .cost__grid-item {
+                padding: 20px;
+                border: 1px solid $white;
+            }
+
+            .topLeft {
+                border-top-left-radius: 20px;
+            }
+
+            .topRight {
+                border-top-right-radius: 20px;
+            }
+
+            .bottomLeft {
+                border-bottom-left-radius: 20px;
+            }
+
+            .bottomRight {
+                border-bottom-right-radius: 20px;
+            }
+
+            .white {
+                background-color: $white;
+                color: $mainPurple;
+                border: 1px solid $mainPurple;
+            }
+        }
+    }
+}

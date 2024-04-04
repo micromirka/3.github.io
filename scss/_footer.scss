@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    .footer__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        p {
+            color: $darkPurple;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.org {
+    background-color: $mainPurple;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: $white;
+
+    .org__container {
+        @include container();
+        text-align: center;
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        .org__grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
+            gap: 40px;
+
+            div {
+                background-color: $white;
+                border-radius: 20px;
+                color: $darkPurple;
+                padding: 30px;
+
+                h4 {
+                    margin-bottom: 10px;
+
+                    &:first-child {
+                        color: $white;
+                        display: inline-block;
+                        padding: 4px 13px;
+                        border-radius: 50%;
+                        background-color: $mainPurple;
+                    }
+                }
+
+                p {
+                    color: $darkPurple;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
